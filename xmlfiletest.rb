@@ -17,9 +17,6 @@ xml.tag!("tns:upass", "xmlns:tns".to_sym => "http://ns.translink.ca/upass/1.10-p
     numTimestoLoop = (numRecordsDesired/numMonths)/numYears
     (1..numTimestoLoop).each do |numRecord|
 
-        numComplete = ((numRecord/numTimestoLoop)*100)
-        print "\r#{numComplete}% remaining  "
-
         myUUID = SecureRandom.uuid
 
         (1..numYears).each do |numYearCounter|
