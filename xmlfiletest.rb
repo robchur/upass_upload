@@ -1,6 +1,6 @@
-require 'rubygems'
-require 'Builder'
-require 'SecureRandom'
+# require "rubygems"
+require 'builder'
+require 'securerandom'
 
 a = Time.now
 
